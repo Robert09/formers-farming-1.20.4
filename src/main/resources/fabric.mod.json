@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "formers-farming",
+  "version": "${version}",
+  "name": "Formers Farming",
+  "description": "A mod for making farming more enjoyable.",
+  "authors": [
+    "FormerCanuck"
+  ],
+  "contact": {
+    "homepage": "https://formercanuck.me/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/formers-farming/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.formercanuck.formersfarming.FormersFarming"
+    ],
+    "client": [
+      "me.formercanuck.formersfarming.FormersFarmingClient"
+    ],
+    "fabric-datagen": [
+      "me.formercanuck.formersfarming.FormersFarmingDataGenerator"
+    ]
+  },
+  "mixins": [
+    "formers-farming.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.10",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
